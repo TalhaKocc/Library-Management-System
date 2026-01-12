@@ -1,4 +1,4 @@
-package com.talhakoc.library_management_system;
+package com.talhakoc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
