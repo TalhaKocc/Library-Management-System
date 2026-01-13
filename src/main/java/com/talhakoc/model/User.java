@@ -1,4 +1,4 @@
-package com.talhakoc.entity;
+package com.talhakoc.model;
 
 import jakarta.persistence.*;
 import lombok.*;
