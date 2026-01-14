@@ -9,20 +9,20 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Table(name = "authors")
+@Table(name = "categories")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Author {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String fullName;
+    private String name;
 
-    @ManyToMany(mappedBy = "authors")
+    @ManyToMany(mappedBy = "categories")
     private List<Book> books;
 }

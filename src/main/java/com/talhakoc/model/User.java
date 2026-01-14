@@ -33,6 +33,15 @@ public class User {
     @Column(nullable = false)
     private Role role;
 
+    @Column(nullable = false)
+    private boolean enabled;
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.REMOVE)
+    private Member member;
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.REMOVE)
+    private Employee employee;
+
     @PrePersist
     public void prePersist() {
         this.uuid = UUID.randomUUID();
