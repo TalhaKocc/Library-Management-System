@@ -1,6 +1,6 @@
-package com.talhakoc.dto.employee.response;
+package com.talhakoc.dto.author.request;
 
-import com.talhakoc.dto.user.response.UserDto;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,12 +10,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeDetailsDto {
+public class AuthorUpdateDto {
 
-    private UserDto user;
-
+    @NotBlank(message = "Bu alan boş bırakılamaz")
     private String fullName;
-
-    private String phoneNumber;
-
 }

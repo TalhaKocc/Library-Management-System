@@ -1,6 +1,5 @@
-package com.talhakoc.dto.employee.response;
+package com.talhakoc.dto.author.response;
 
-import com.talhakoc.dto.user.response.UserDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,12 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeDetailsDto {
-
-    private UserDto user;
+public class AuthorDto {
 
     private String fullName;
-
-    private String phoneNumber;
-
 }
