@@ -10,13 +10,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class MemberDetailsDto {
+public class MemberDto {
 
     private UserDto user;
 
     private String fullName;
 
-    private String phoneNumber;
-
-    private String address;
 }
