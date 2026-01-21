@@ -23,5 +23,4 @@ public interface EmployeeMapper {
     Employee toUpdateEntity(EmployeeUpdateDto employeeUpdateDto, @MappingTarget Employee employee);
 
     EmployeeDetailsDto detailsToDto(Employee employee);
-
 }
